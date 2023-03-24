@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>學期預借</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white static-top">
+      <div class="container">
+        <a class="navbar-brand" href="../startbootstrap-scrolling-nav-gh-pages/2.classroom1.html"><img src="../startbootstrap-scrolling-nav-gh-pages/image/logo_01.gif"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                教室預借
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="../startbootstrap-scrolling-nav-gh-pages/3.classroom2.html">平時預借</a>
+                <a class="dropdown-item" href="../startbootstrap-scrolling-nav-gh-pages/4.classroom3.html">學期預借</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../startbootstrap-scrolling-nav-gh-pages/5.record.html">預借紀錄</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../startbootstrap-scrolling-nav-gh-pages/6.management.html">帳號管理</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../startbootstrap-scrolling-nav-gh-pages/7.setting.html">學期區間設置</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://www.management.fju.edu.tw/index.php" target="_blank">輔仁大學管理學院</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://www.management.fju.edu.tw/_chinese/10_contact/00_contact.php" target="_blank">聯絡我們</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../startbootstrap-scrolling-nav-gh-pages/1.index.html">登出</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container" id="container" height="100%">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <table align="right">
+            <tr>
+              <td>親愛的▯▯▯您好！</td>
+            </tr>
+          </table>
+          <table id="classroom_table" width="100%" height="100%" border="0">
+            <tr>
+              <td align="left" width="20%">
+                請選擇空間類型：
+                <select class="form-control col-md-10">
+                  <option>教室</option>
+                  <option>MD教室</option>
+                </select><br>
+                請選擇大樓：
+                <select class="form-control col-md-10">
+                  <option>全部</option>
+                  <option>利瑪竇LM</option>
+                  <option>博達樓BS</option>
+                  <option>進修部ES</option>
+                  <option>聖言樓SF</option>
+                </select><br><br><br><br>
+                請輸入預借用途：
+                <input class="form-control col-md-10" type="text" placeholder="輸入預借用途"><br>
+                <button type="button" class="btn btn-primary" data-target="#borrowing" data-toggle="modal">預借</button>
+                <!-- Modal -->
+                <div class="modal fade" id="borrowing" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered " role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">預借空間確認</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        是否確定預借？
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary">確定</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <iframe src="../startbootstrap-scrolling-nav-gh-pages/classroom_data2.html" frameborder="0" name="classroom_data" width="100%" height="100%" min-height="100%"></iframe>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>帳號管理</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white static-top">
+      <div class="container">
+        <a class="navbar-brand" href="../startbootstrap-scrolling-nav-gh-pages/2.classroom1.html"><img src="../startbootstrap-scrolling-nav-gh-pages/image/logo_01.gif"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                教室預借
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="../startbootstrap-scrolling-nav-gh-pages/3.classroom2.html">平時預借</a>
+                <a class="dropdown-item" href="../startbootstrap-scrolling-nav-gh-pages/4.classroom3.html">學期預借</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../startbootstrap-scrolling-nav-gh-pages/5.record.html">預借紀錄</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../startbootstrap-scrolling-nav-gh-pages/6.management.html">帳號管理</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../startbootstrap-scrolling-nav-gh-pages/7.setting.html">學期區間設置</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://www.management.fju.edu.tw/index.php" target="_blank">輔仁大學管理學院</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://www.management.fju.edu.tw/_chinese/10_contact/00_contact.php" target="_blank">聯絡我們</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../startbootstrap-scrolling-nav-gh-pages/1.index.html">登出</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container" id="container" height="100%">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <table align="right" width="100%">
+            <tr align="right">
+              <td>親愛的▯▯▯您好！</td>
+            </tr>
+          </table>
+
+          <table align="right" width="70%">
+            <tr height="60px">
+              <td align="right"><input class="form-control col-md-10" type="text" placeholder="帳號/使用者名稱"></td>
+              <td align="left"  width="30%"><button type="button" class="btn btn-primary">查詢</button></td>
+              <td  width="25%">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-primary" data-target="#adding1" data-toggle="modal">新增帳號</button>
+                  <button type="button" class="btn btn-primary" data-target="#edit1" data-toggle="modal">修改帳號</button>
+                  <button type="button" class="btn btn-primary" data-target="#delete" data-toggle="modal">刪除帳號</button>
+                </div>
+                <div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered " role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">刪除帳號</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        是否刪除該帳號？
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-danger">刪除</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-------------------->
+                <div class="modal fade" id="adding1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered " role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">新增帳號</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <table width="100%">
+                          <tr align="left">
+                            <td>
+                              <div class="form-group row">
+                              <label class="col-sm-4 col-form-label">User</label>
+                              <div class="col-sm-8">
+                                <input type="text" class="form-control" placeholder="使用者姓名">
+                              </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr align="left">
+                            <td>
+                              <div class="form-group row">
+                              <label class="col-sm-4 col-form-label">Account</label>
+                              <div class="col-sm-8">
+                                <input type="account" class="form-control" placeholder="帳號">
+                              </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr align="left">
+                            <td>
+                              <div class="form-group row">
+                              <label class="col-sm-4 col-form-label">Password</label>
+                              <div class="col-sm-8">
+                                <input type="password" class="form-control" placeholder="密碼">
+                              </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr align="left">
+                            <td>
+                              <div class="form-group row">
+                              <label class="col-sm-4 col-form-label">Confirm Password </label>
+                              <div class="col-sm-8">
+                                <input type="password" class="form-control" placeholder="再次確認密碼">
+                              </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr align="left">
+                            <td>
+                              <div class="form-group row">
+                              <label class="col-sm-4 col-form-label">Permissions</label>
+                              <div class="col-sm-8">
+                                <select class="form-control col-md-8">
+                                  <option>教師</option>
+                                  <option>管理者</option>
+                                </select>
+                              </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary" data-target="#adding2" data-toggle="modal">新增</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-------------------->
+                <div class="modal fade" id="adding2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered " role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">新增帳號</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        是否新增帳號？
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary">新增</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-------------------->
+              </td>
+            </tr>
+          </table>
+
+          <table id="bg" border="1" width="100%" height="100%" align="center">
+            <tr align="center">
+              <td width="15%">教師/管理者</td>
+              <td width="15%">使用者名稱</td>
+              <td>電子信箱</td>
+              <td>帳號</td>
+              <td>密碼</td>
+              <td>編輯</td>
+            </tr>
+            <tr align="center">
+              <td>管理者</td>
+              <td>張敬揚</td>
+              <td>aaa@mail.fju.edu.tw</td>
+              <td>A12345</td>
+              <td>aaaaaaaa</td>
+              <td><input type="radio" value="option1"></td>
+            </tr>
+            <tr align="center">
+              <td>管理者</td>
+              <td>吳倫憲</td>
+              <td>bbb@mail.fju.edu.tw</td>
+              <td>B12345</td>
+              <td>bbbbbbbb</td>
+              <td><input type="radio" value="option1"></td>
+            </tr>
+            <tr align="center">
+              <td>教師</td>
+              <td>李淑蓮</td>
+              <td>ccc@mail.fju.edu.tw</td>
+              <td>C12345</td>
+              <td>cccccccc</td>
+              <td><input type="radio" value="option1"></td>
+            </tr>
+            <tr align="center">
+              <td>教師</td>
+              <td>林韋志</td>
+              <td>ddd@mail.fju.edu.tw</td>
+              <td>D12345</td>
+              <td>dddddddd</td>
+              <td><input type="radio" value="option1"></td>
+            </tr>
+            <tr align="center">
+              <td>教師</td>
+              <td>賴佳容</td>
+              <td>eee@mail.fju.edu.tw</td>
+              <td>E12345</td>
+              <td>eeeeeeeee</td>
+              <td><input type="radio" value="option1"></td>
+            </tr>
+            <tr align="center">
+              <td>教師</td>
+              <td>陳慶法</td>
+              <td>fff@mail.fju.edu.tw</td>
+              <td>F12345</td>
+              <td>ffffffff</td>
+              <td><input type="radio" value="option1"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-------------------->
+    <div class="modal fade" id="edit1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered " role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">修改帳號</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <table width="100%">
+              <tr align="left">
+                <td>
+                  <div class="form-group row">
+                  <label class="col-sm-4 col-form-label">User</label>
+                  <div class="col-sm-8">
+                    <input type="text" class="form-control" placeholder="新使用者姓名">
+                  </div>
+                  </div>
+                </td>
+              </tr>
+              <tr align="left">
+                <td>
+                  <div class="form-group row">
+                  <label class="col-sm-4 col-form-label">Account</label>
+                  <div class="col-sm-8">
+                    <input type="account" class="form-control" placeholder="新帳號">
+                  </div>
+                  </div>
+                </td>
+              </tr>
+              <tr align="left">
+                <td>
+                  <div class="form-group row">
+                  <label class="col-sm-4 col-form-label">Password</label>
+                  <div class="col-sm-8">
+                    <input type="password" class="form-control" placeholder="新密碼">
+                  </div>
+                  </div>
+                </td>
+              </tr>
+              <tr align="left">
+                <td>
+                  <div class="form-group row">
+                  <label class="col-sm-4 col-form-label">Confirm Password </label>
+                  <div class="col-sm-8">
+                    <input type="password" class="form-control" placeholder="再次確認新密碼">
+                  </div>
+                  </div>
+                </td>
+              </tr>
+              <tr align="left">
+                <td>
+                  <div class="form-group row">
+                  <label class="col-sm-4 col-form-label">Permissions</label>
+                  <div class="col-sm-8">
+                    <select class="form-control col-md-8">
+                      <option>教師</option>
+                      <option>管理者</option>
+                    </select>
+                  </div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary" data-target="#edit2" data-toggle="modal">修改</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------------------->
+    <div class="modal fade" id="edit2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered " role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">修改帳號</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            是否修改該帳號？
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary">修改</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+  </body>
+
+</html>
